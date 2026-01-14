@@ -1,4 +1,4 @@
-'''
+#explicaçâo da aula
 nome = (input('digite seu nome:')).lower()
 if nome[:1] == 'a':
     print('que nome lindo')
@@ -7,11 +7,11 @@ elif 'k' in nome or 'v' in nome:
 else:
     print('bem normal')
 print('tenha um bom dia {}'.format(nome))
-'''
-from pandas.io.formats.format import return_docstring
+
+from pandas.io.formats.format import return_docstring #deixo claro que nao faço ideia porque isso ta aqui e nao sei se o codigo vai quebrar se tirar ele so apareceu nem fui eu pos acho que foi na hora de mandar pro git
 
 #desafios 1-10
-'''
+
 #1 Calculando empréstimo:
 valor = int(input('digite o valor da casa:'))
 salario = float(input('digite o seu salario:'))
@@ -23,9 +23,9 @@ if salario * 0.3 >= parcela:
 else:
     print('\033[31mEmprestimo reprovado\n\033[mcada parcela sera de R${:.2f}'
           'mais de 30% de seu salaário'.format(parcela))
-'''
+
 #2 Convertendo para binario, octal ou hexadecimal:
-'''
+
 num1 = int(input('digite um numero:'))
 a = input('digite b para binario, o para octal e h para hexadecimal').lower()
 
@@ -48,10 +48,10 @@ elif n1 == n2:
     print('os dois valores sao iguais')
 else:
     print('o segundo valor é maior')
-'''
+
 #4 Tempo para alistamento:
 
-'''
+
 import datetime
 ano_atual = datetime.date.today().year
 nasc = int(input('Digite o ano em que voce nasceu:'))
@@ -63,10 +63,10 @@ if ano_atual - nasc < 19:
     print(f'voce fara o alisatmento daqui {diferença_n} anos')
 if ano_atual - nasc == 19:
     print(f'voce deve fazer o alistamento imediatamente')
-'''
+
 
 #5 Média:
-'''
+
 def medias():
     while True:
         n1 = int(input('digite a primeira nota:'))
@@ -86,9 +86,9 @@ def medias():
             print('reprovado')
         break
 medias()
-'''
+
 #6 Classificação de categoria/idade:
-'''
+
 import datetime
 data = datetime.date.today().year
 ano = int(input('Digite o ano de seu nascimento:'))
@@ -115,9 +115,9 @@ elif idade <= 25:
     print(f'O atleta tem {idade} anos e participa da categoria {categoria}')
 else:
     print(f'O atleta tem {idade} anos e participa da categoria {categoria}')
-'''
+
 #7 Classificando Triângulos:
-'''
+
 s1 = int(input('tamanho do primeiro segmento:'))
 s2 = int(input('tamanho do segundo segmento:'))
 s3 = int(input('tamanho do terceiro segmento:'))
@@ -179,7 +179,7 @@ elif forma == 4:
     print(f'Voce vai parcelar, entao cada parcela sera {v_parcelas} e o preço final vai ser de {npreco}')
 else:
     print('Inválido')
-'''
+
 #10 Jogo de Jokenpô:
 import random
 import time
